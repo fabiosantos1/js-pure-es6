@@ -1,0 +1,27 @@
+.loader {
+  border: 0.1em solid transparent;
+  border-top: 0.1em solid #fff; 
+  border-left: 0.1em solid #fff; 
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  animation: spin 1s linear infinite;
+  display: block;
+  margin: 0 auto;
+  display: none;
+}
+
+.loading {
+  .loader {
+    display: block;
+  }
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}

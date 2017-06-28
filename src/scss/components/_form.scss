@@ -1,0 +1,92 @@
+form {
+  ul {
+    li {
+      position: relative;
+      color: gray(20);
+      list-style-type: none;
+      padding: 1em 0;
+
+      .image {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      label {
+        position: absolute;
+        z-index: 2;
+        top: 15px;
+        left: 0;
+        font-size: 1.5em;
+        transition: all 0.1s linear;
+        color: $text-color;
+        padding: 0.5em;
+      }
+
+      div.error {
+        color: $color-invalid;
+      }
+
+      div.success {
+        color: $color-valid;
+      }
+
+      input {
+        
+        position: relative;
+        z-index: 1;
+
+        &[type=text] {
+          height: 100%;
+          width: 100%;
+          font-size: 1.5em;
+          border: none;
+          border-bottom: 1px solid gray(200);
+          color: $text-color;
+          padding: 0.5em;
+        }
+
+        &[type=file] {
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          cursor: pointer;
+        }
+
+        &:focus {
+          outline: 0;
+        }
+
+        &:focus + label,
+        &.length + label {
+          font-size: 0.8em;
+          top: 0;
+          margin: 0 0.5em;
+        }
+
+        &.valid {
+          color: $color-valid;
+          border-bottom: 2px solid $color-valid;
+        }
+
+        &.valid + label {
+          color: $color-valid;
+        }
+
+        &.invalid {
+          color: $color-invalid;
+          border-bottom: 2px solid $color-invalid;
+        }
+
+        &.invalid + label {
+          color: $color-invalid;
+        }
+      }
+    }
+  }
+}

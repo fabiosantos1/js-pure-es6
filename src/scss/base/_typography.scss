@@ -1,0 +1,12 @@
+
+body {
+  color: $text-color;
+  font-family: $text-font-stack;
+  
+  font-size: $text-size;
+  background-color: $body-color;
+
+  @include breakpoint('big'){ 
+    font-size: $text-size-big;
+  }
+}

@@ -1,0 +1,14 @@
+
+$text-font-stack: 'Arial', 'Helvetica', 'Arial', sans-serif !default;
+$text-color: gray(150);
+$text-size: 12px;
+$text-size-big: 14px;
+$color-valid : #00c8b3;
+$color-invalid : #f06459;
+
+$body-color: #fff;
+$max-width: 873px !default;
+
+$breakpoints: (
+  'big': (min-width: 321px)
+) !default;

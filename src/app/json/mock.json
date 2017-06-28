@@ -1,0 +1,98 @@
+{
+"fields": [
+    {
+      "input": {
+        "name": "txtFullname",
+        "id": "txtFullname",
+        "value": "",
+        "type": "text",
+        "class": "input",
+        "placeholder": "Full Name",
+        "required": true
+      }
+    },
+    {
+      "input": {
+        "name": "txtCpf",
+        "id": "txtCpf",
+        "value": "",
+        "type": "text",
+        "mask": "000.000.000-00",
+        "class": "input",
+        "placeholder": "CPF",
+        "required": true
+      }
+    },
+    {
+      "input": {
+        "name": "txtTelephone",
+        "id": "txtTelefone",
+        "value": "",
+        "type": "text",
+        "mask": "(00) 00000-0000",
+        "class": "input",
+        "placeholder": "Telephone",
+        "required": true
+      }
+    },
+    {
+      "input": {
+        "name": "txtAddress",
+        "id": "txtAddress",
+        "value": "",
+        "type": "text",
+        "class": "input",
+        "placeholder": "Address",
+        "required": true
+      }
+    },
+    {
+      "map": {
+        "name": "mapRenderer",
+        "id": "mapRenderer",
+        "class": "map-renderer",
+        "input": "txtAddress",
+        "key": "AIzaSyDeLUz6-inC4MQeDuAT3Aql-vHJneZc0Bg",
+        "zoom": 15,
+        "lat": -34.397,
+        "lng": 150.644
+      }
+    },
+    {
+      "input": {
+        "name": "txtComplement",
+        "id": "txtComplement",
+        "value": "",
+        "type": "text",
+        "class": "input",
+        "placeholder": "Complement",
+        "required": true
+      }
+    },
+    {
+      "upload": {
+        "name": "uplImage",
+        "id": "uplImage",
+        "class": "upload-button",
+        "avatar": "imgAvatar",
+        "placeholder": "Upload picture"
+      }
+    },
+    {
+      "image": {
+        "name": "imgAvatar",
+        "id": "imgAvatar",
+        "class": "image"
+      }
+    },
+    {
+      "button": {
+        "name": "btnSave",
+        "id": "btnSave",
+        "value": "",
+        "class": "input",
+        "text": "Save"
+      }
+    }
+  ]
+}

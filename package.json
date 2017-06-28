@@ -1,0 +1,41 @@
+{
+  "name": "js-pure-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --history-api-fallback",
+    "build": "webpack",
+    "release": "webpack"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babili-webpack-plugin": "^0.1.1",
+    "css-loader": "^0.28.4",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "node-sass": "^4.5.3",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiosantos1/js-pure-es6.git"
+  },
+  "author": "Fabio Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiosantos1/js-pure-es6/issues"
+  },
+  "homepage": "https://github.com/fabiosantos1/js-pure-es6#readme",
+  "dependencies": {
+    "google-maps": "^3.2.1"
+  }
+}
