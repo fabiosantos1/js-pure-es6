@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --hot --history-api-fallback",
     "build": "webpack",
-    "release": "webpack"
+    "release": "webpack",
+    "test": "karma start"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -17,6 +18,13 @@
     "css-loader": "^0.28.4",
     "cssnano": "^3.10.0",
     "extract-text-webpack-plugin": "^2.1.2",
+    "jasmine": "^2.6.0",
+    "jasmine-core": "^2.6.4",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.3",
+    "karma-webpack": "^2.0.3",
     "node-sass": "^4.5.3",
     "postcss-cssnext": "^2.11.0",
     "postcss-loader": "^2.0.6",

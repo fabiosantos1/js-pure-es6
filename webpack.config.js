@@ -1,10 +1,10 @@
-const target = process.env.npm_lifecycle_event;
-let env = 'prod';
+const target = process.env.npm_lifecycle_event
+let env = 'prod'
 
 switch (target) {
     case 'dev':
     case 'build':
-    env = 'dev';
+      env = 'dev'
 }
 
 module.exports = function() {

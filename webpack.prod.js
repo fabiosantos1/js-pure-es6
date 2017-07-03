@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const BabiliPlugin = require("babili-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const BabiliPlugin = require("babili-webpack-plugin")
 
 const extractSass = new ExtractTextPlugin({
   filename: "[name].css"
-});
+})
 
 module.exports = {
     entry: {
@@ -40,7 +40,7 @@ module.exports = {
               })
             },
             {
-              test: /\.jsx?$/,
+              test: /\.js?$/,
               exclude: /node_modules/,
               loader: 'babel-loader'
             }

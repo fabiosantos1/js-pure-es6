@@ -15,7 +15,7 @@ class Database {
     // Create database model
     openRequest.onupgradeneeded = function() {
       const database = self.db.result
-      const store = database.createObjectStore(`${self.id}-store`, {keyPath: "id", autoIncrement:true})
+      const store = database.createObjectStore(`${self.id}-store`, {keyPath: `${self.id}-store`, autoIncrement:true})
       const index = store.createIndex(`${self.id}-index`, [
           "data.name", 
           "data.cpf", 
@@ -30,12 +30,12 @@ class Database {
     // Set DB to Class on succes
     openRequest.onsuccess = function(e) {
 			self.db = e.target.result
-		
-			self.db.onerror = function(event) {
-			  //console.log("Database error: " + event.target.errorCode) 
-        return
-			}
+    }
+
+		openRequest.onerror = function(e) {
+			console.log("Database error: " + openRequest.error) 
 		}
+	
   }
 
   insert(data) {
@@ -58,11 +58,11 @@ class Database {
         avatar: data.hiddenimgAvatar
       })
 
-      request.onsuccess = function(event) {
+      request.onsuccess = function(e) {
         resolve(true)
       }
 
-      request.onerror = function(event) {
+      request.onerror = function(e) {
         reject(false)
       }
     })
